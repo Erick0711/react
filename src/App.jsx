@@ -1,14 +1,19 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Saludar, Trabajo } from './Components/Saludar'
 import Product, { Navbar, UserCard } from './Components/Product'
 import { Button } from './Components/Button'
 import { Post } from './Components/Post'
+import { Counter, StateInput } from './Components/Hook'
 function App() {
   return (
     <>
       <Button name="hola desde el boton" text="Hola"></Button>
       <hr />
       <Post />
+      <hr />
+      <Counter/>
+      <hr />
+      <StateInput/>
       <hr />
       <Navbar />
       <Saludar />
